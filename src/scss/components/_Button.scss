@@ -1,0 +1,161 @@
+/*---------------------------------------------------
+	Buttons and Hyperlinks
+---------------------------------------------------*/
+
+.btn {
+	@include transition;
+}
+
+
+/* Nav */
+
+.btn--nav { 
+	display: inline-block;
+  position: relative;
+	color: $gdcBlack;
+	font-family: 'Poppins', sans-serif;
+	line-height: 1.2;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+button.btn--nav {
+	background: none;
+	border: none;
+	padding: 0 0 0.3rem;
+}
+
+
+/* Primary nav */
+
+$btnNavColors: (
+  'purple': #7303c0,
+  'hotpink': #ec38bc,
+  'gray': #ccc,
+);
+
+.btn--nav-primary {
+  vertical-align: middle;
+  overflow: hidden;
+  padding-bottom: 0.3rem;
+
+  &::after {
+    background: linear-gradient(
+      to bottom,
+      rgba( map_get($btnNavColors, 'gray'), 0.8),
+      rgba( map_get($btnNavColors, 'gray'), 0.8)
+    ) center 1.08rem / 100% 0.24rem no-repeat;
+
+    content: "";
+    position: absolute;
+		top: 0.18rem;
+    left: 0;
+    z-index: -1;
+    width: 400%;
+    height: 100%;
+    will-change: transform;
+  }
+
+  &:hover::after {
+    background-image: linear-gradient(
+      90deg, 
+      rgba( map_get($btnNavColors, 'hotpink'), 0.8) 15%, 
+      rgba( map_get($btnNavColors, 'purple'), 0.6) 35%,  
+      rgba( map_get($btnNavColors, 'hotpink'), 0.8) 85%
+    );
+    animation: underline-gradient 6s linear infinite;
+  }
+}
+
+@keyframes underline-gradient { 
+  0%{
+    transform: translate3d(0%, 0%, 0);
+  }
+  100%{
+    transform: translate3d(-75%, 0%, 0);
+  }
+}
+
+.btn--nav-primary.active::after {
+  background-image: linear-gradient(
+    90deg, 
+    rgba( map_get($btnNavColors, 'hotpink'), 0.8) 15%, 
+    rgba( map_get($btnNavColors, 'purple'), 0.6) 35%,  
+    rgba( map_get($btnNavColors, 'hotpink'), 0.8) 85%
+  );
+}
+
+
+/* Text links */
+
+.btn--text {
+	color: $gdcPurple;
+	text-decoration: none;
+	border-bottom: 1px dashed $gdcGray;
+
+	&:hover {
+		border-bottom: 1px dashed transparent;
+	}
+}
+
+.btn--text-footer {
+	color: $gdcGray;
+}
+
+.btn--text-contact {
+	color: $gdcWhite;
+	border-bottom: 1px dashed $gdcWhite;
+
+	&:hover {
+		border-bottom: 1px dashed transparent;
+	}
+}
+
+
+/* Close button (used in Contact Us) */
+
+.btn--close {
+	display: block;
+	background: none;
+	border: none;
+	padding: 0.5rem 1rem;
+	margin: 0 auto;
+
+	&, 
+	&:focus {
+		background-color: $gdcWhite;
+		color: $gdcPurple;
+		border: 1px dashed $gdcWhite;
+	}
+	
+
+	&:hover {
+		background-color: $gdcPurple;
+		color: $gdcWhite;
+		border: 1px dashed $gdcWhite;
+	}
+}
+
+.btn-close-wrap {
+	padding-bottom: 0.5rem;
+
+	@media (min-width: 768px) {
+		padding-top: 1rem;
+
+	}
+}
+
+
+/* Social media icons */
+
+.social-icon {
+	width: 1.7rem;
+	height: 1.7rem;
+	margin-right: 0.7rem;
+	fill: $gdcLightGray;
+	@include transition;
+}
+
+a:hover .social-icon {
+	fill: $gdcPurple;
+}

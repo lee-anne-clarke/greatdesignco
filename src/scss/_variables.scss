@@ -1,0 +1,20 @@
+/*---------------------------------------------------
+	Variables and Mixins
+---------------------------------------------------*/
+
+$gdcBlack: #000;
+$gdcWhite: #fff;
+$gdcLightGray: #ccc;
+$gdcGray: #a6a5a5;
+$gdcPurple: #857a9b;
+
+@mixin transition {
+	transition: all 0.25s ease-in-out;
+}
+
+@mixin noPointer {
+	&::before,
+	&::after {
+		pointer-events: none;
+	}
+}

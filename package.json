@@ -1,0 +1,24 @@
+{
+  "name": "greatdesign",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "http://www.lee-anne-clarke.com/work/greatdesignco",
+  "devDependencies": {
+    "react-scripts": "1.1.2"
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-portal": "^4.1.4",
+    "react-scripts": "1.1.2",
+    "react-slick": "^0.23.1",
+    "react-transition-group": "^2.3.0",
+    "react-waypoint": "^8.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

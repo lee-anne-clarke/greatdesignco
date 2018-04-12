@@ -1,0 +1,52 @@
+/*---------------------------------------------------
+	Read more (text truncate show/hide)
+---------------------------------------------------*/
+
+@media (max-width: 767px) {
+	.content {
+		padding: 1rem;
+		border: 1px solid $gdcLightGray;
+		margin-bottom: 0.5rem;
+		transition: max-height 0.7s ease;
+
+		& > p {
+			margin-top: 0;
+		}	
+	}
+
+	.hideContent {
+	  overflow: hidden;
+	  max-height: 10rem;
+	}
+
+	.showContent {
+	  max-height: 99rem;
+	}
+}
+
+
+/* Toggle button */
+
+.btn--toggle {
+	display: block;
+	background: none;
+	border: none;
+	padding: 0.5rem 1rem;
+	margin: 0 auto;
+
+	@media (min-width: 768px) {
+		display: none;
+	}
+}
+
+.hideContent + .btn--toggle {
+	background-color: $gdcPurple;
+	color: $gdcWhite;
+	border: 1px dashed $gdcPurple;
+}
+
+.showContent + .btn--toggle {
+	background-color: $gdcWhite;
+	color: $gdcPurple;
+	border: 1px dashed $gdcPurple;
+}

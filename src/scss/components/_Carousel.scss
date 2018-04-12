@@ -1,0 +1,60 @@
+/*---------------------------------------------------
+	Carousel (Slick sliders)
+---------------------------------------------------*/
+
+.carousel-overlay {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255,255,255,0.9);
+}
+
+.carousel-text {
+	position: absolute;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 65%;
+
+	@media (max-width: 990px) {
+		display: none;
+	}
+}
+
+
+// Slick - custom styles
+
+.slick-list {
+	max-height: 100vh;
+}
+
+.slick-track {
+	@media (max-width: 767px) {
+		min-height: 218px !important;
+	}
+
+	@media (min-width: 991px) {
+		min-height: 100vh !important;
+	}
+}
+
+.slick-slide {
+	text-align: center;
+
+	img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.slick-dots {
+	bottom: 10px;
+	z-index: 2;
+
+	@media (min-width: 991px) {
+		bottom: 20px;
+	}
+}
