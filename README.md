@@ -1,3 +1,3 @@
 # greatdesignco
 
-Great Design Co., a mock design agency sie.
+Great Design Co., a mock design agency site.
