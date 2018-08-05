@@ -112,10 +112,10 @@ class Work extends Component {
 
 	       		<p>Check out our amazing work from a variety of industries.</p>
 	       		
-						<Route path={`${this.props.match.url}/printdesign`} component={PrintDesign} />
-						<Route path={`${this.props.match.url}/development`} component={WebDev} />
-						<Route path={`${this.props.match.url}/strategy`} component={Strategy} />
-						<Route path={`${this.props.match.url}/exp-design`} component={ExpDesign} />
+						<Route path={`${this.props.match.path}/printdesign`} component={PrintDesign} />
+						<Route path={`${this.props.match.path}/development`} component={WebDev} />
+						<Route path={`${this.props.match.path}/strategy`} component={Strategy} />
+						<Route path={`${this.props.match.path}/exp-design`} component={ExpDesign} />
 					</section>
 
 				</div> {/* end .container */}
