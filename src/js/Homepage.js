@@ -19,6 +19,8 @@ import featuredImg4 from '../img/work/expdesign/expdesign4.jpg'
 
 class Homepage extends Component {
 	componentDidMount() {
+		document.title = "Great Design Co."
+
 	  window.scrollTo(0, 0)
 
 	  //ScrollReveal

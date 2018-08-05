@@ -52,6 +52,8 @@ class Work extends Component {
   }
 
 	componentDidMount() {
+		document.title = "Work | Great Design Co."
+
 	  window.scrollTo(0, 0)
 
 	  //react-scroll
@@ -99,7 +101,7 @@ class Work extends Component {
 									</Link>
 								</li>
 							))}
-							<div class="navlist--work__bar"></div>
+							<div className="navlist--work__bar"></div>
 						</ul>
 					</nav>
 

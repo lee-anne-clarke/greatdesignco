@@ -15,6 +15,8 @@ import aboutUsImg3 from '../../img/aboutus/aboutus3.jpg'
 
 class AboutUs extends Component {
 	componentDidMount() {
+		document.title = "About Us | Great Design Co."
+
 	  window.scrollTo(0, 0)
 
 	  //ScrollReveal

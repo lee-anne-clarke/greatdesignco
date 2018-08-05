@@ -15,7 +15,7 @@ class Nav extends Component {
 			},
 			{ 
 				id: uuid(), 
-				button: <NavLink to='/work' className='btn btn--nav btn--nav-primary' activeClassName='active'>Our Work</NavLink> 
+				button: <NavLink to='/our-work' className='btn btn--nav btn--nav-primary' activeClassName='active'>Our Work</NavLink> 
 			},
 			{ 
 				id: uuid(), 
