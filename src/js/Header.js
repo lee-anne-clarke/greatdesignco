@@ -11,7 +11,9 @@ function Header() {
 			<div className="header__inner">
 				
 				<div>
-					<Link to="/"><img className="header-logo" src={logo} alt="Great Design Co. logo" /></Link>
+					<Link to="/">
+						<img className="header-logo" src={logo} alt="Great Design Co. logo" />
+					</Link>
 				</div>
 
 				<Nav />

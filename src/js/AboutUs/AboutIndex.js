@@ -53,7 +53,7 @@ class AboutUs extends Component {
 						imgSrc={aboutUsImg2}
 						title="Our team">
 						<p>
-							<Link to="/" className="btn btn--text" href="/">Join our team</Link>
+							<Link className="btn btn--text" to="/">Join our team</Link>
 						</p>
 						<p>Knausgaard post-ironic gluten-free pariatur pug pop-up in, actually ramps ut tofu trust fund chillwave. Authentic umami hot chicken tacos lyft four dollar toast trust fund asymmetrical cupidatat cliche dolore portland green juice. Chia palo santo consectetur VHS fam. Aliqua chartreuse kickstarter locavore taxidermy man bun. Unicorn meggings neutra palo santo, anim occaecat DIY pinterest cliche cillum hell of. Offal eu you probably haven't heard of them, marfa iceland etsy mlkshk prism aute ullamco tote bag.</p>
 						<p>Franzen fixie laborum, keffiyeh pariatur minim listicle polaroid cred affogato. Duis pickled retro you probably haven't heard of them 90's non air plant offal franzen la croix. Raw denim hashtag in slow-carb next level.</p>

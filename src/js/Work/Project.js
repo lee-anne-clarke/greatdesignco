@@ -16,6 +16,8 @@ import project4 from '../../img/work/project/project4.jpg'
 
 class Project extends Component {
 	componentDidMount() {
+		document.title = "Project | Great Design Co."
+
 	  window.scrollTo(0, 0)
 
 	  //ScrollReveal

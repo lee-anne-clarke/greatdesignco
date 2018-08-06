@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Route, Link } from 'react-router-dom'
+import { Route, Link, Switch, Redirect } from 'react-router-dom'
 import uuid from 'uuid'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
@@ -29,7 +29,7 @@ class Work extends Component {
       workNavItems: [
 			{ 
 				id: uuid(), 
-				url: 'printdesign',
+				url: 'print-design',
 				btnText: 'Print Design' 
 			},
 			{ 
@@ -94,8 +94,8 @@ class Work extends Component {
 							{workNavItems.map(({ id, url, btnText }) => (
 								<li className="nav-li nav-li--work" key={id}>
 									<Link 
-										to={`${this.props.match.url}/${url}`} 
 										className="btn btn--nav" 
+										to={`${this.props.match.url}/${url}`} 
 										onClick={this.scrollToWorkSubs}>
 										{btnText}
 									</Link>
@@ -112,10 +112,14 @@ class Work extends Component {
 
 	       		<p>Check out our amazing work from a variety of industries.</p>
 	       		
-						<Route path={`${this.props.match.path}/printdesign`} component={PrintDesign} />
-						<Route path={`${this.props.match.path}/development`} component={WebDev} />
-						<Route path={`${this.props.match.path}/strategy`} component={Strategy} />
-						<Route path={`${this.props.match.path}/exp-design`} component={ExpDesign} />
+	       		<Switch>
+	       			<Route exact path={`${this.props.match.path}`} />
+							<Route path={`${this.props.match.path}/print-design`} component={PrintDesign} />
+							<Route path={`${this.props.match.path}/development`} component={WebDev} />
+							<Route path={`${this.props.match.path}/strategy`} component={Strategy} />
+							<Route path={`${this.props.match.path}/exp-design`} component={ExpDesign} />
+					    <Route render={ () => <Redirect to="/404" /> } />
+				    </Switch>
 					</section>
 
 				</div> {/* end .container */}

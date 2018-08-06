@@ -8,10 +8,11 @@ import Waypoint from 'react-waypoint'
 
 import Header from './js/Header'
 import Homepage from './js/Homepage'
-import AboutUs from './js/AboutUs/index.js'
-import Work from './js/Work/index.js'
+import AboutUs from './js/AboutUs/AboutIndex'
+import Work from './js/Work/WorkIndex'
 import Project from './js/Work/Project'
 import Footer from './js/Footer'
+import ErrorPage from './js/ErrorPage'
 import './normalize.min.css'
 import './App.css'
 
@@ -38,8 +39,9 @@ class App extends Component {
 					<Switch>
 				    <Route exact path="/" component={Homepage} />
 				    <Route path="/about" component={AboutUs} />
-				    <Route exact path="/our-work/project" component={Project} />
+				    <Route path="/our-work/project" component={Project} />
 				    <Route path="/our-work" component={Work} />
+				    <Route component={ErrorPage} />
 			    </Switch>
 
 			    <Footer />
