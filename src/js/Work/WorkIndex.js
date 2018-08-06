@@ -107,7 +107,7 @@ class Work extends Component {
 
 					<hr className="hr hr--work" />
 
-					<section className="u-textcenter">
+					<div className="u-textcenter">
 						<Element name="workSubsAnchor" className="anchor" />
 
 	       		<p>Check out our amazing work from a variety of industries.</p>
@@ -120,7 +120,7 @@ class Work extends Component {
 							<Route path={`${this.props.match.path}/exp-design`} component={ExpDesign} />
 					    <Route render={ () => <Redirect to="/404" /> } />
 				    </Switch>
-					</section>
+					</div>
 
 				</div> {/* end .container */}
 	    </div>

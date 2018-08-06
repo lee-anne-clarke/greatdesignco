@@ -31,6 +31,11 @@ class ErrorPage extends Component {
 				  	<img src={heroImg} alt="" />
 				  </div>
 				 </Slider>
+
+				 <div className="container container--errorpage">
+					<h1 className="h1 h1--errorpage">404</h1>
+					<p><Link className="btn btn--text" to="/">Get me outta here!</Link></p>
+				 </div>
 	    </div>
 	  );
   }

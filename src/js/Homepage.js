@@ -32,7 +32,7 @@ class Homepage extends Component {
 	  	<div ref={(r) => { this.gdcMain = r; }}>
 	  		<Slider {...sliderSettings}>
 					<div>
-						<div className="carousel-text">
+						<div className="carousel-text carousel-text--home">
 							<h1 className="h1">Unexpected, Experienced, Utterly Magnificent</h1>
 						</div>
 						<div className="carousel-overlay"></div>
@@ -40,7 +40,7 @@ class Homepage extends Component {
 				  </div>
 
 					<div>
-						<div className="carousel-text">
+						<div className="carousel-text carousel-text--home">
 							<h1 className="h1">We push the boundaries of design and development</h1>
 						</div>
 						<div className="carousel-overlay"></div>
@@ -48,7 +48,7 @@ class Homepage extends Component {
 				  </div>
 
 					<div>
-						<div className="carousel-text">
+						<div className="carousel-text carousel-text--home">
 							<h1 className="h1">Take a look around and say hello!</h1>
 						</div>
 						<div className="carousel-overlay"></div>
