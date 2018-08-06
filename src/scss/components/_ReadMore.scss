@@ -41,12 +41,12 @@
 
 .hideContent + .btn--toggle {
 	background-color: $gdcPurple;
-	color: $gdcWhite;
+	color: $white;
 	border: 1px dashed $gdcPurple;
 }
 
 .showContent + .btn--toggle {
-	background-color: $gdcWhite;
+	background-color: $white;
 	color: $gdcPurple;
 	border: 1px dashed $gdcPurple;
 }

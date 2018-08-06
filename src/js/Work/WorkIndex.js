@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Route, Link, Switch, Redirect } from 'react-router-dom'
+import { Route, NavLink, Switch, Redirect } from 'react-router-dom'
 import uuid from 'uuid'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
@@ -93,12 +93,12 @@ class Work extends Component {
 
 							{workNavItems.map(({ id, url, btnText }) => (
 								<li className="nav-li nav-li--work" key={id}>
-									<Link 
-										className="btn btn--nav" 
+									<NavLink 
+										className="btn btn--nav btn--nav-secondary" 
 										to={`${this.props.match.url}/${url}`} 
 										onClick={this.scrollToWorkSubs}>
 										{btnText}
-									</Link>
+									</NavLink>
 								</li>
 							))}
 							<div className="navlist--work__bar"></div>
