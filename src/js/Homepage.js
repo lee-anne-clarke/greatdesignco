@@ -31,30 +31,31 @@ class Homepage extends Component {
 	  return (
 	  	<div ref={(r) => { this.gdcMain = r; }}>
 	  		<Slider {...sliderSettings}>
-					<div>
-						<div className="carousel-text carousel-text--home">
-							<h1 className="h1">Unexpected, Experienced, Utterly Magnificent</h1>
+					<div className="u-relative">
+						<div className="carousel-text">
+							<h1 className="h1 h1--home">Unexpected, Experienced, Utterly Magnificent</h1>
 						</div>
 						<div className="carousel-overlay"></div>
 				  	<img src={slideImg1} alt="" />
 				  </div>
 
-					<div>
-						<div className="carousel-text carousel-text--home">
-							<h1 className="h1">We push the boundaries of design and development</h1>
+					<div className="u-relative">
+						<div className="carousel-text">
+							<h1 className="h1 h1--home">We push the boundaries of design and development</h1>
 						</div>
 						<div className="carousel-overlay"></div>
 				  	<img src={slideImg2} alt="" />
 				  </div>
 
-					<div>
-						<div className="carousel-text carousel-text--home">
-							<h1 className="h1">Take a look around and say hello!</h1>
+					<div className="u-relative">
+						<div className="carousel-text">
+							<h1 className="h1 h1--home">Take a look around and say hello!</h1>
 						</div>
 						<div className="carousel-overlay"></div>
 				  	<img src={slideImg3} alt="" />
 				  </div>
 				 </Slider>
+				 
 
 				<div className="container">
 					<section className="u-textcenter">
