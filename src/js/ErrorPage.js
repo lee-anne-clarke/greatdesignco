@@ -8,6 +8,7 @@ import sr from './sr/ScrollReveal'
 
 import heroImg from '../img/404-hero.jpg'
 
+
 class ErrorPage extends Component {
 	componentDidMount() {
 		document.title = "Uh Oh! | Great Design Co."
@@ -40,5 +41,6 @@ class ErrorPage extends Component {
 	  );
   }
 }
+
 
 export default ErrorPage
