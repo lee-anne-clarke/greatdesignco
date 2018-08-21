@@ -15,6 +15,26 @@ import project4 from '../../img/work/project/project4.jpg'
 
 
 class Project extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {showPortal: false}
+
+    this.handleShow = this.handleShow.bind(this)
+		this.handleHide = this.handleHide.bind(this)
+  }
+
+  handleShow() {
+    this.setState({showPortal: true})
+		document.body.classList.add('u-no-overflow')
+		document.body.classList.remove('body-fadein')
+  }
+  
+  handleHide() {
+    this.setState({showPortal: false})
+		document.body.classList.remove('u-no-overflow')
+		document.body.classList.add('body-fadein')
+  }
+
 	componentDidMount() {
 		document.title = "Project | Great Design Co."
 
@@ -28,6 +48,34 @@ class Project extends Component {
   	const bgImg = {
   		backgroundImage: `url(${project2})`
 		}
+
+    const portal = this.state.showPortal ? (
+      <ContactUs>
+	      <div className="contactus" role="dialog" aria-labelledby="dialogTitle">
+	      	<div className="contactus__inner">
+	      		<h1 className="h1 h1--contactus" id="dialogTitle">Contact Us</h1>
+
+						<p>
+							<a 
+								className="btn btn--text btn--text-contactus" 
+								href="https://maps.google.com/" 
+								target="_blank" 
+								rel="noreferrer noopener">
+								<b>Great Design Co.</b><br />
+								123 Main St.<br />
+								San Franciso, CA 10001
+							</a>
+						</p>
+
+						<h2 className="h2">hello @ greatdesign.co</h2>
+
+		        <div className="btn-close-wrap">
+		        	<button className="btn btn--button btn--close" onClick={this.handleHide}>Close me!</button>
+		        </div>
+		      </div>
+	      </div>
+      </ContactUs>
+    ) : null;
 
 	  return (
 	  	<div ref={(r) => { this.gdcMain = r; }}>
@@ -92,9 +140,11 @@ class Project extends Component {
 						<h2 className="h2">Let's get started.</h2>
 						<p>Reach out to us today.</p>
 
-						<ContactUs />
+						<button className="btn btn--nav btn--nav-primary" onClick={this.handleShow}>Contact Us</button>
 					</div>
 				</section>
+
+				{portal}
 	    </div>
 	  );
   }

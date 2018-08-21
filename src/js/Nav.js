@@ -7,22 +7,22 @@ import ContactUs from './ContactUs'
 class Nav extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      navItems: [
-			{ 
-				id: uuid(), 
-				button: <NavLink to='/about' className='btn btn--nav btn--nav-primary' activeClassName='active'>About Us</NavLink> 
-			},
-			{ 
-				id: uuid(), 
-				button: <NavLink to='/our-work' className='btn btn--nav btn--nav-primary' activeClassName='active'>Our Work</NavLink> 
-			},
-			{ 
-				id: uuid(), 
-				button: <ContactUs /> 
-			},
-     ],
-    }
+    this.state = {showPortal: false}
+
+    this.handleShow = this.handleShow.bind(this)
+		this.handleHide = this.handleHide.bind(this)
+  }
+
+  handleShow() {
+    this.setState({showPortal: true})
+		document.body.classList.add('u-no-overflow')
+		document.body.classList.remove('body-fadein')
+  }
+  
+  handleHide() {
+    this.setState({showPortal: false})
+		document.body.classList.remove('u-no-overflow')
+		document.body.classList.add('body-fadein')
   }
 
 	componentDidMount() {
@@ -30,17 +30,51 @@ class Nav extends Component {
 	}
 
 	render() {
-		const { navItems } = this.state
+    const portal = this.state.showPortal ? (
+      <ContactUs>
+	      <div className="contactus" role="dialog" aria-labelledby="dialogTitle">
+	      	<div className="contactus__inner">
+	      		<h1 className="h1 h1--contactus" id="dialogTitle">Contact Us</h1>
+
+						<p>
+							<a 
+								className="btn btn--text btn--text-contactus" 
+								href="https://maps.google.com/" 
+								target="_blank" 
+								rel="noreferrer noopener">
+								<b>Great Design Co.</b><br />
+								123 Main St.<br />
+								San Franciso, CA 10001
+							</a>
+						</p>
+
+						<h2 className="h2">hello @ greatdesign.co</h2>
+
+		        <div className="btn-close-wrap">
+		        	<button className="btn btn--button btn--close" onClick={this.handleHide}>Close me!</button>
+		        </div>
+		      </div>
+	      </div>
+      </ContactUs>
+    ) : null;
 
 		return (
 			<nav>
 				<ul className="navlist">
-					{navItems.map(({ id, button }) => (
-						<li className="nav-li nav-li--primary" key={id}>
-							{button}
-						</li>
-					))}
+					<li className="nav-li nav-li--primary" key={uuid()}>
+						<NavLink to="/about" className="btn btn--nav btn--nav-primary">About Us</NavLink> 
+					</li>
+
+					<li className="nav-li nav-li--primary" key={uuid()}>
+						<NavLink to="/our-work" className="btn btn--nav btn--nav-primary">Our Work</NavLink> 
+					</li>
+
+					<li className="nav-li nav-li--primary" key={uuid()}>
+						<button className="btn btn--nav btn--nav-primary" onClick={this.handleShow}>Contact Us</button>
+					</li>
 				</ul>
+
+				{portal}
 			</nav>
 		);
 	}
