@@ -1,3 +1,3 @@
-# greatdesignco
+# Great Design Co.
 
-Great Design Co., a mock design agency site.
+A mock design agency site.
