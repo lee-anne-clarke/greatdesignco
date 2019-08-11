@@ -2,8 +2,9 @@ import React, { Component } from 'react'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
+import SlickSlide from './carousel/sliderSettings'
 import sliderSettings from './carousel/sliderSettings'
-import { srMainConfig } from './sr/srConfig'
+import srMainConfig from './sr/srConfig'
 import sr from './sr/ScrollReveal'
 
 import ProjectBox from './Work/ProjectBox'
@@ -32,26 +33,26 @@ class Homepage extends Component {
 	  	<div ref={(r) => { this.gdcMain = r; }}>
 	  		<Slider {...sliderSettings}>
 					<div className="u-relative">
-						<div className="carousel-text">
+						<div className="slide-text">
 							<h1 className="h1 h1--home">Unexpected, Experienced, Utterly Magnificent</h1>
 						</div>
-						<div className="carousel-overlay"></div>
+						<div className="slide-overlay"></div>
 				  	<img src={slideImg1} alt="" />
 				  </div>
 
 					<div className="u-relative">
-						<div className="carousel-text">
+						<div className="slide-text">
 							<h1 className="h1 h1--home">We push the boundaries of design and development</h1>
 						</div>
-						<div className="carousel-overlay"></div>
+						<div className="slide-overlay"></div>
 				  	<img src={slideImg2} alt="" />
 				  </div>
 
 					<div className="u-relative">
-						<div className="carousel-text">
+						<div className="slide-text">
 							<h1 className="h1 h1--home">Take a look around and say hello!</h1>
 						</div>
-						<div className="carousel-overlay"></div>
+						<div className="slide-overlay"></div>
 				  	<img src={slideImg3} alt="" />
 				  </div>
 				 </Slider>
@@ -72,25 +73,21 @@ class Homepage extends Component {
 							<ProjectBox 
 								imgSrc={featuredImg1}
 								imgAlt="featured 1"
-								linkUrl="/"
 							/>
 
 							<ProjectBox 
 								imgSrc={featuredImg2}
 								imgAlt="featured 2"
-								linkUrl="/"
 							/>
 
 							<ProjectBox 
 								imgSrc={featuredImg3}
 								imgAlt="featured 3"
-								linkUrl="/"
 							/>
 
 							<ProjectBox 
 								imgSrc={featuredImg4}
 								imgAlt="featured 4"
-								linkUrl="/"
 							/>
 						</div>
 					</section>

@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import { srMainConfig } from '../sr/srConfig'
+import srMainConfig from '../sr/srConfig'
 import sr from '../sr/ScrollReveal'
 import AboutBox from './AboutBox'
 
@@ -26,15 +25,15 @@ class AboutUs extends Component {
   render () {
 	  return (
 	  	<div ref={(r) => { this.gdcMain = r; }}>
-	  		<Slider>
+				<Slider>
 					<div>
-						<div className="carousel-text">
+						<div className="slide-text">
 							<h1 className="h1">About Us</h1>
 						</div>
-						<div className="carousel-overlay"></div>
-				  	<img src={heroImg} alt="" />
-				  </div>
-				 </Slider>
+						<div className="slide-overlay"></div>
+						<img src={heroImg} alt="" />
+					</div>
+				</Slider>
 
 				<div className="container">
 					<section className="u-textcenter">
@@ -52,9 +51,6 @@ class AboutUs extends Component {
 					<AboutBox 
 						imgSrc={aboutUsImg2}
 						title="Our team">
-						<p>
-							<Link className="btn btn--text" to="/">Join our team</Link>
-						</p>
 						<p>Knausgaard post-ironic gluten-free pariatur pug pop-up in, actually ramps ut tofu trust fund chillwave. Authentic umami hot chicken tacos lyft four dollar toast trust fund asymmetrical cupidatat cliche dolore portland green juice. Chia palo santo consectetur VHS fam. Aliqua chartreuse kickstarter locavore taxidermy man bun. Unicorn meggings neutra palo santo, anim occaecat DIY pinterest cliche cillum hell of. Offal eu you probably haven't heard of them, marfa iceland etsy mlkshk prism aute ullamco tote bag.</p>
 						<p>Franzen fixie laborum, keffiyeh pariatur minim listicle polaroid cred affogato. Duis pickled retro you probably haven't heard of them 90's non air plant offal franzen la croix. Raw denim hashtag in slow-carb next level.</p>
 					</AboutBox>
@@ -63,12 +59,12 @@ class AboutUs extends Component {
 						imgSrc={aboutUsImg3}
 						title="Our services">
 						<p>Knausgaard post-ironic gluten-free pariatur pug pop-up in, actually ramps ut tofu trust fund chillwave. Authentic umami hot chicken tacos lyft four dollar toast trust fund asymmetrical cupidatat cliche dolore portland green juice. Chia palo santo consectetur VHS fam. Aliqua chartreuse kickstarter locavore taxidermy man bun. Unicorn meggings neutra palo santo, anim occaecat DIY pinterest cliche cillum hell of. Offal eu you probably haven't heard of them, marfa iceland etsy mlkshk prism aute ullamco tote bag.</p>
-
+						
 						<ul>
-							<li>Print Design</li>
-							<li>Web Development</li>
-							<li>Strategy</li>
-							<li>Experience Design</li>
+							<li>Quis chia polaroid single-origin coffee</li>
+							<li>Sint velit ipsum fugiat shoreditch</li>
+							<li>Pariatur small batch green juice sriracha </li>
+							<li>Yuccie minim duis stumptown</li>
 						</ul>
 					</AboutBox>
 

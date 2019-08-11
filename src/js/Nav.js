@@ -6,10 +6,10 @@ import ContactUs from './ContactUs'
 
 class Nav extends Component {
   constructor(props) {
-    super(props);
-    this.state = {showPortal: false}
+		super(props);
+		this.state = {showPortal: false}
 
-    this.handleShow = this.handleShow.bind(this)
+		this.handleShow = this.handleShow.bind(this)
 		this.handleHide = this.handleHide.bind(this)
   }
 
@@ -30,33 +30,33 @@ class Nav extends Component {
 	}
 
 	render() {
-    const portal = this.state.showPortal ? (
-      <ContactUs>
-	      <div className="contactus" role="dialog" aria-labelledby="dialogTitle">
-	      	<div className="contactus__inner">
-	      		<h1 className="h1 h1--contactus" id="dialogTitle">Contact Us</h1>
+		const portal = this.state.showPortal ? (
+	      <ContactUs>
+		      <div className="contactus" role="dialog" aria-labelledby="dialogTitle">
+		      	<div className="contactus__inner">
+		      		<h1 className="h1 h1--contactus" id="dialogTitle">Contact Us</h1>
 
-						<p>
-							<a 
-								className="btn btn--text btn--text-contactus" 
-								href="https://maps.google.com/" 
-								target="_blank" 
-								rel="noreferrer noopener">
-								<b>Great Design Co.</b><br />
-								123 Main St.<br />
-								San Franciso, CA 10001
-							</a>
-						</p>
+							<p>
+								<a 
+									className="btn btn--text btn--text-contactus" 
+									href="https://maps.google.com/" 
+									target="_blank" 
+									rel="noreferrer noopener">
+									<b>Great Design Co.</b><br />
+									123 Main St.<br />
+									San Franciso, CA 10001
+								</a>
+							</p>
 
-						<h2 className="h2">hello @ greatdesign.co</h2>
+							<p className="contactus__email">hello @ greatdesign.co</p>
 
-		        <div className="btn-close-wrap">
-		        	<button className="btn btn--button btn--close" onClick={this.handleHide}>Close me!</button>
-		        </div>
+			        <div className="btn-close-wrap">
+			        	<button className="btn btn--button btn--close" onClick={this.handleHide}>Close me!</button>
+			        </div>
+			      </div>
 		      </div>
-	      </div>
-      </ContactUs>
-    ) : null;
+	      </ContactUs>
+	    ) : null;
 
 		return (
 			<nav>

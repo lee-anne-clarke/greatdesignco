@@ -4,6 +4,7 @@ import {
 	Route, 
 	Switch 
 } from 'react-router-dom'
+
 import Waypoint from 'react-waypoint'
 
 import Header from './js/Header'

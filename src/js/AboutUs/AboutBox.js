@@ -27,14 +27,14 @@ class AboutBox extends Component {
 	}
 
 	render () {
-		const bgImg = {
+		const aboutImg = {
 			backgroundImage: `url(${this.props.imgSrc})`,
 		}
 
 		return (
 			<section className="aboutbox inner">
 				<div className="aboutbox__imgwrap">
-					<div className="about-img" style={bgImg}></div>
+					<div className="about-img" style={aboutImg}></div>
 					<div className="about-overlay"></div>
 				</div>
 

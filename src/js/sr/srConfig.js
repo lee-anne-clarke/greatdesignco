@@ -8,4 +8,4 @@ const srMainConfig = {
   viewFactor: 0,
 }
 
-export { srMainConfig }
+export default srMainConfig

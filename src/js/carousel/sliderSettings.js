@@ -10,4 +10,4 @@ const sliderSettings = {
   speed: 500
 }
 
-export default sliderSettings
+export default sliderSettings 

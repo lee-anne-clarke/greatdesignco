@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import { srMainConfig } from './sr/srConfig'
+import srMainConfig from './sr/srConfig'
 import sr from './sr/ScrollReveal'
 
 import heroImg from '../img/404-hero.jpg'
@@ -24,11 +24,11 @@ class ErrorPage extends Component {
 	  	<div ref={(r) => { this.gdcMain = r; }}>
 	  		<Slider>
 					<div>
-						<div className="carousel-text">
+						<div className="slide-text">
 							<h1 className="h1 h1--errorpage">404</h1>
 							<p><Link className="btn btn--text" to="/">Get me outta here!</Link></p>
 						</div>
-						<div className="carousel-overlay"></div>
+						<div className="slide-overlay"></div>
 				  	<img src={heroImg} alt="" />
 				  </div>
 				 </Slider>
