@@ -1,4 +1,5 @@
 import React from 'react'
+import ExtLink from '../ExtLink'
 
 
 function ContactUsInner(props) {
@@ -8,15 +9,13 @@ function ContactUsInner(props) {
 	  		<h1 className="h1 h1--contactus" id="dialogTitle">Contact Us</h1>
 
 				<p>
-					<a 
-						className="btn btn--text btn--text-contactus" 
-						href="https://maps.google.com/" 
-						target="_blank" 
-						rel="noreferrer noopener">
-						<b>Great Design Co.</b><br />
-						123 Main St.<br />
-						San Franciso, CA 10001
-					</a>
+						<ExtLink 
+						classes="btn btn--text btn--text-contactus" 
+						url="https://maps.google.com/">
+							<b>Great Design Co.</b><br />
+							123 Main St.<br />
+							San Franciso, CA 10001
+						</ExtLink>
 				</p>
 
 				<p className="contactus__email">hello @ greatdesign.co</p>

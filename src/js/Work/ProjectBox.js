@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 function ProjectBox(props) {
 	return (
-		<figure className="projectbox" key={props.key}>
+		<figure className="projectbox">
 			<img className="projectbox__img" src={props.imgSrc} alt={props.imgAlt} />
 			<figcaption className="projectbox__caption effect-inner">
 				<h3 className="h3-projectbox">Quis <span>dolor</span></h3>
