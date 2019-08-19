@@ -5,6 +5,7 @@ import 'slick-carousel/slick/slick-theme.css'
 import sliderSettings from './carousel/sliderSettings'
 import srMainConfig from './sr/srConfig'
 import sr from './sr/ScrollReveal'
+import uuid from 'uuid'
 
 import ProjectBox from './Work/ProjectBox'
 
@@ -18,6 +19,30 @@ import featuredImg4 from '../img/work/expdesign/expdesign4.jpg'
 
 
 class Homepage extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			projectBoxes: [
+				{ 
+					imgSrc: featuredImg1,
+					imgAlt: 'featured 1' 
+				},
+				{ 
+					imgSrc: featuredImg2,
+					imgAlt: 'featured 2' 
+				},
+				{ 
+					imgSrc: featuredImg3,
+					imgAlt: 'featured 3' 
+				},
+				{ 
+					imgSrc: featuredImg4,
+					imgAlt: 'featured 4' 
+				},
+			]
+		}
+	}
+
 	componentDidMount() {
 		document.title = "Great Design Co."
 
@@ -28,9 +53,11 @@ class Homepage extends Component {
 	}
 	
   render () {
+  	const { projectBoxes } = this.state
+
 	  return (
 	  	<div ref={(r) => { this.gdcMain = r; }}>
-	  		<Slider {...sliderSettings}>
+				<Slider {...sliderSettings}>
 					<div className="u-relative">
 						<div className="slide-text">
 							<h1 className="h1 h1--home">Unexpected, Experienced, Utterly Magnificent</h1>
@@ -69,25 +96,13 @@ class Homepage extends Component {
 						<h2 className="h2">Featured work</h2>
 
 						<div className="inner">
-							<ProjectBox 
-								imgSrc={featuredImg1}
-								imgAlt="featured 1"
-							/>
-
-							<ProjectBox 
-								imgSrc={featuredImg2}
-								imgAlt="featured 2"
-							/>
-
-							<ProjectBox 
-								imgSrc={featuredImg3}
-								imgAlt="featured 3"
-							/>
-
-							<ProjectBox 
-								imgSrc={featuredImg4}
-								imgAlt="featured 4"
-							/>
+							{projectBoxes.map(({ imgSrc, imgAlt }) => (
+								<ProjectBox 
+									key={uuid()}
+									imgSrc={imgSrc}
+									imgAlt={imgAlt}
+								/>
+							))}
 						</div>
 					</section>
 				</div> {/* end .container */}

@@ -1,52 +1,31 @@
-import React from 'react'
+import React, { Component } from 'react'
+import WorkSection from './WorkSection'
 import ProjectBox from './ProjectBox'
-
-import webDev1 from '../../img/work/webdev/development1.jpg'
-import webDev2 from '../../img/work/webdev/development2.jpg'
-import webDev3 from '../../img/work/webdev/development3.jpg'
-import webDev4 from '../../img/work/webdev/development4.jpg'
-import webDev5 from '../../img/work/webdev/development5.jpg'
-import webDev6 from '../../img/work/webdev/development6.jpg'
+import { webDevData } from './projectBoxData'
+import uuid from 'uuid'
 
 
-function WebDev() {
-	return (
-		<section>
-			<h2 className="h2">Web Development</h2>
+class WebDev extends Component {
+		constructor(props) {
+		super(props);
+		this.state = { webDevData }
+	}
 
-			<div className="inner">
-				<ProjectBox 
-					imgSrc={webDev1}
-					imgAlt=""
-				/>
+	render () {
+		const { webDevData } = this.state
 
-				<ProjectBox 
-					imgSrc={webDev2}
-					imgAlt=""
-				/>
-
-				<ProjectBox 
-					imgSrc={webDev3}
-					imgAlt=""
-				/>
-
-				<ProjectBox 
-					imgSrc={webDev4}
-					imgAlt=""
-				/>
-
-				<ProjectBox 
-					imgSrc={webDev5}
-					imgAlt=""
-				/>
-
-				<ProjectBox 
-					imgSrc={webDev6}
-					imgAlt=""
-				/>
-			</div>
-		</section>
-	);
+		return (
+			<WorkSection title="Web Development">
+				{webDevData.map(({ imgSrc, imgAlt }) => (
+					<ProjectBox 
+						key={uuid()}
+						imgSrc={imgSrc}
+						imgAlt={imgAlt}
+					/>
+				))}
+			</WorkSection>
+		);
+	}
 }
 
 

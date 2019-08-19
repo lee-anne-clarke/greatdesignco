@@ -28,22 +28,18 @@ class Work extends Component {
     this.state = {
       workNavItems: [
 			{ 
-				id: uuid(), 
 				url: 'print-design',
 				btnText: 'Print Design' 
 			},
 			{ 
-				id: uuid(), 
 				url: 'development',
 				btnText: 'Web Development'
 			},
 			{ 
-				id: uuid(), 
 				url: 'strategy',
 				btnText: 'Strategy'
 			},
 			{ 
-				id: uuid(), 
 				url: 'exp-design',
 				btnText: 'Experience Design'
 			},
@@ -91,8 +87,8 @@ class Work extends Component {
 				<nav>
 					<ul className="navlist navlist--work">
 
-						{workNavItems.map(({ id, url, btnText }) => (
-							<li className="nav-li nav-li--work" key={id}>
+						{workNavItems.map(({ url, btnText }) => (
+							<li className="nav-li nav-li--work" key={uuid()}>
 								<NavLink 
 									className="btn btn--nav btn--nav-secondary" 
 									to={`${this.props.match.url}/${url}`} 

@@ -5,7 +5,8 @@ import 'slick-carousel/slick/slick-theme.css'
 import srMainConfig from '../sr/srConfig'
 import sr from '../sr/ScrollReveal'
 
-import ContactUs from '../ContactUs'
+import ContactUs from '../ContactUs/ContactUs'
+import ContactUsInner from '../ContactUs/ContactUsInner'
 
 import heroImg from '../../img/work/project/project-hero.jpg'
 import project1 from '../../img/work/project/project1.jpg'
@@ -19,17 +20,17 @@ class Project extends Component {
     super(props);
     this.state = {showPortal: false}
 
-    this.handleShow = this.handleShow.bind(this)
-		this.handleHide = this.handleHide.bind(this)
+    this.handleShowPortal = this.handleShowPortal.bind(this)
+		this.handleHidePortal = this.handleHidePortal.bind(this)
   }
 
-  handleShow() {
+  handleShowPortal() {
     this.setState({showPortal: true})
 		document.body.classList.add('u-no-overflow')
 		document.body.classList.remove('body-fadein')
   }
   
-  handleHide() {
+  handleHidePortal() {
     this.setState({showPortal: false})
 		document.body.classList.remove('u-no-overflow')
 		document.body.classList.add('body-fadein')
@@ -51,29 +52,7 @@ class Project extends Component {
 
     const portal = this.state.showPortal ? (
       <ContactUs>
-	      <div className="contactus" role="dialog" aria-labelledby="dialogTitle">
-	      	<div className="contactus__inner">
-	      		<h1 className="h1 h1--contactus" id="dialogTitle">Contact Us</h1>
-
-						<p>
-							<a 
-								className="btn btn--text btn--text-contactus" 
-								href="https://maps.google.com/" 
-								target="_blank" 
-								rel="noreferrer noopener">
-								<b>Great Design Co.</b><br />
-								123 Main St.<br />
-								San Franciso, CA 10001
-							</a>
-						</p>
-
-						<p className="contactus__email">hello @ greatdesign.co</p>
-
-		        <div className="btn-close-wrap">
-		        	<button className="btn btn--button btn--close" onClick={this.handleHide}>Close me!</button>
-		        </div>
-		      </div>
-	      </div>
+	      <ContactUsInner clickEvent={this.handleHidePortal} />
       </ContactUs>
     ) : null;
 
@@ -140,7 +119,9 @@ class Project extends Component {
 					<h2 className="h2">Let's get started.</h2>
 					<p>Reach out to us today.</p>
 
-					<button className="btn btn--nav btn--nav-primary" onClick={this.handleShow}>Contact Us</button>
+					<button className="btn btn--nav btn--nav-primary" onClick={this.handleShowPortal}>
+						Contact Us
+					</button>
 				</div>
 			</section>
 

@@ -14,8 +14,9 @@
 	display: flex;
 	padding: 2rem 2rem 0;
 	
-	@media (max-width: 699px) {
+	@media (max-width: 699px) {	
 		flex-direction: column;
+		text-align: center;
 	}
 
 	@media (min-width: 700px) {
