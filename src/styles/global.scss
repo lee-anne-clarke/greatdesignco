@@ -1,0 +1,19 @@
+@import './variables';
+@import './base';
+@import './typography';
+@import './buttons';
+
+@import './components/HoverEffects';
+@import './components/Header';
+@import './components/Footer';
+@import './components/Nav';
+@import './components/About';
+@import './components/ReadMore';
+@import './components/Project';
+@import './components/ContactUs';
+
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
+@import './components/SlickSlide';
+
+@import './utilities';
