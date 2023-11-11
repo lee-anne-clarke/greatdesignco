@@ -5,11 +5,11 @@ import Image from 'next/image';
 import Slider from 'react-slick'
 import ContactModal from '../../components/ContactModal'
 
-import heroImg from '../../../img//work/project/project-hero.jpg'
-import project1 from '../../../img//work/project/project1.jpg'
-import project2 from '../../../img//work/project/project2.jpg'
-import project3 from '../../../img//work/project/project3.jpg'
-import project4 from '../../../img//work/project/project4.jpg'
+import heroImg from '../../../img/work/project/project-hero.jpg'
+import project1 from '../../../img/work/project/project1.jpg'
+import project2 from '../../../img/work/project/project2.jpg'
+import project3 from '../../../img/work/project/project3.jpg'
+import project4 from '../../../img/work/project/project4.jpg'
 
 
 export default function Project(props) {

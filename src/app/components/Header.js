@@ -49,7 +49,7 @@ export default function Header() {
 						<li className="nav-li nav-li--primary" key={uuidv4()}>
 							<Link 
 								href="/about" 
-								className={pathname === '/about' ? 'btn btn--nav btn--nav-primary active' : 'btn btn--nav btn--nav-primary'}
+								className={pathname === '/about/' ? 'btn btn--nav btn--nav-primary active' : 'btn btn--nav btn--nav-primary'}
 							>
 								About Us
 							</Link> 
@@ -57,8 +57,8 @@ export default function Header() {
 
 						<li className="nav-li nav-li--primary" key={uuidv4()}>
 							<Link 
-								href="/work" 
-								className={pathname === '/work' ? 'btn btn--nav btn--nav-primary active' : 'btn btn--nav btn--nav-primary'}
+								href="/our-work" 
+								className={pathname == '/our-work/' || pathname == '/our-work/project/' ? 'btn btn--nav btn--nav-primary active' : 'btn btn--nav btn--nav-primary'}
 							>
 								Our Work
 							</Link> 

@@ -7,7 +7,7 @@ import Slider from 'react-slick'
 import sliderSettings from './components/carousel/sliderSettings'
 import { v4 as uuidv4 } from 'uuid';
 
-import ProjectBox from './work/project/ProjectBox'
+import ProjectBox from './our-work/project/ProjectBox'
 import slideImg1 from '../img/homepage/homepage-slide1.jpg'
 import slideImg2 from '../img/homepage/homepage-slide2.jpg'
 import slideImg3 from '../img/homepage/homepage-slide3.jpg'

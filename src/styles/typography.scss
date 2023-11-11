@@ -3,12 +3,12 @@
 ---------------------------------------------------*/
 
 html {
-	font-family: 'Fira Sans', sans-serif;
+	font-family: var(--font-firasans);
 	letter-spacing: 1px;
 }
 
 .h1 {
-	font-family: 'Courgette', sans-serif;
+	font-family: var(--font-courgette);
 	font-size: 4rem;
 	font-weight: normal;
 	margin: 0;
