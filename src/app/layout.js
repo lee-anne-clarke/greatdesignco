@@ -28,8 +28,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${firaSans.variable} ${courgette.variable}`}>
-      <body>
+    <html lang="en">
+      <body className={`${firaSans.variable} ${courgette.variable}`}>
 
         <Header />
         {children}
