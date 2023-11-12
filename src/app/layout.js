@@ -1,4 +1,3 @@
-import '../styles/global.scss'
 import Header from './components/Header'
 import Footer from './components/Footer'
 
@@ -18,6 +17,9 @@ const courgette = Courgette({
   display: 'swap',
   variable: '--font-courgette',
 })
+
+// Styles
+import '../styles/global.scss'
 
 // Metadata
 export const metadata = {
