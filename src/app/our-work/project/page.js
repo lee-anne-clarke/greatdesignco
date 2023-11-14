@@ -15,8 +15,6 @@ import project4 from '../../../img/work/project/project4.jpg'
 export default function Project(props) {
 	useEffect(() =>  {
 		document.title = "Project | Great Design Co."
-
-	  //window.scrollTo(0, 0)
 	});
 
 	return (

@@ -1,7 +1,6 @@
 'use client'
 
 import React, { useState, useEffect } from 'react'
-// import { Route, NavLink, Switch, Redirect } from 'react-router-dom'
 import Link from 'next/link'
 import Image from 'next/image';
 
@@ -17,7 +16,7 @@ import ExpDesign from './ExpDesign'
 
 import heroImg from '../../img/work/work-hero.jpg'
 
-//Variables necessary for react-scroll
+//Variables needed for react-scroll
 let Events     = Scroll.Events
 let scrollSpy  = Scroll.scrollSpy
 let scroller   = Scroll.scroller
@@ -29,15 +28,13 @@ export default function Work() {
 	useEffect(() =>  {
 		document.title = "Our Work | Great Design Co."
 
-	  //window.scrollTo(0, 0)
+		//react-scroll
+		scrollSpy.update();
 
-	  //react-scroll
-	  scrollSpy.update();
-
-	  return () => {
-	  	Events.scrollEvent.remove('begin');
+		return () => {
+			Events.scrollEvent.remove('begin');
 			Events.scrollEvent.remove('end');
-	  }
+		}
 	});
 
 	
