@@ -13,18 +13,25 @@ import logo from '../../img/logo.png'
 export default function Header() {
 	const [headerActive, setHeaderActive] = useState(false);
 
-	useEffect(() => {
-		window.addEventListener('scroll', () => {
-		  if (window.scrollY > 50) {
+	const handleHeaderEffect = () => {
+		if (window.scrollY > 50) {
 		    setHeaderActive(true)
 		  } else {
 		    setHeaderActive(false)
 		  }
-		})
-	});
+	}
+
+	useEffect(() => {
+		window.addEventListener("scroll", handleHeaderEffect)
+
+		return () => {
+      		window.removeEventListener("scroll", handleHeaderEffect);
+    	};
+
+	}, []);
 
 
-	const pathname = usePathname()
+	const pathname = usePathname();
   	//console.log('Current pathname:', pathname);
 
 
