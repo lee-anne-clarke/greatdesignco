@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
-import { v4 as uuidv4 } from 'uuid';
 import ContactModalContent from './ContactModalContent'
 
 
@@ -22,7 +21,7 @@ export default function ContactModal() {
 
   return (
     <>
-      <div className="nav-li nav-li--primary" key={uuidv4()}>
+      <div className="nav-li nav-li--primary">
           <button className="btn btn--nav btn--nav-primary" onClick={handleOpenPortal}>
             Contact Us
           </button>
