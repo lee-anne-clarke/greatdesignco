@@ -22,11 +22,11 @@ export default function ContactModal() {
 
   return (
     <>
-      <li className="nav-li nav-li--primary" key={uuidv4()}>
+      <div className="nav-li nav-li--primary" key={uuidv4()}>
           <button className="btn btn--nav btn--nav-primary" onClick={handleOpenPortal}>
             Contact Us
           </button>
-        </li>
+        </div>
 
       {showModal && createPortal(
         <ContactModalContent onClose={handleClosePortal} />,
