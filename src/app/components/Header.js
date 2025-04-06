@@ -32,7 +32,6 @@ export default function Header() {
 
 
 	const pathname = usePathname();
-  	//console.log('Current pathname:', pathname);
 
 
 	return (
