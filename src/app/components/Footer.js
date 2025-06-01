@@ -3,6 +3,8 @@ import Link from 'next/link'
 
 
 export default function Footer() {
+	const currentYear = new Date().getFullYear();
+	
 	return (
 		<footer className="footer">
 			<div className="footer__inner">
@@ -17,7 +19,7 @@ export default function Footer() {
 				</div> 
 
 				<div className="footer-col footer-col--cr">
-					<p>&copy; Great Design Co. {new Date().getFullYear()}</p>
+					<p>&copy; Great Design Co. {currentYear}</p>
 				</div>
 
 				<div className="footer-col">

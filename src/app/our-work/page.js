@@ -52,7 +52,7 @@ export default function Work() {
 			{ 
 				btnText: 'Experience Design'
 			},
-    ]
+    	]
 	);
 
 
