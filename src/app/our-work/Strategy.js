@@ -6,9 +6,9 @@ import { v4 as uuidv4 } from 'uuid';
 
 
 export default function Strategy(props) {
-	if (props.visible === true) {
-		const [data] = useState(strategyData)
+	const [data] = useState(strategyData)
 	
+	if (props.visible === true) {
 		return (
 			<WorkSection title="Strategy">
 				{data.map(({ imgSrc, imgAlt }) => (

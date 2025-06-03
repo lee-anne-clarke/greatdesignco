@@ -26,7 +26,7 @@ export default function Project(props) {
 						<h1 className="h1">Quis dolor</h1>
 					</div>
 					<div className="slide-overlay"></div>
-					<Image src={heroImg} alt="" />
+					<Image src={heroImg} alt="" priority />
 			 	</div>
 		 	</Slider>
 
@@ -58,8 +58,8 @@ export default function Project(props) {
 
 				<div className="project-area__txt container">
 					<h2 className="h2 u-textcenter">Pug ad enamel</h2>
-					<p>Vice poke sriracha, neutra yuccie jean shorts squid ut fashion axe tumblr street art activated charcoal in. Qui jean shorts aliqua do, cardigan synth bespoke occaecat vape vinyl vice. Normcore trust fund ea squid drinking vinegar. Voluptate hammock prism offal chambray yr artisan tacos ipsum pitchfork. Pug ad enamel pin kitsch, man bun tattooed raw denim 90's four loko fanny pack keytar ex austin keffiyeh retro.</p>
-					<p>Direct trade meditation hashtag flexitarian williamsburg kitsch. Ad umami vegan pariatur. +1 knausgaard blue bottle tacos chartreuse, subway tile craft beer narwhal chicharrones. Neutra stumptown asymmetrical aute consectetur plaid. Voluptate chartreuse occupy duis, you probably haven't heard of them venmo health goth esse beard distillery.</p>
+					<p>Vice poke sriracha, neutra yuccie jean shorts squid ut fashion axe tumblr street art activated charcoal in. Qui jean shorts aliqua do, cardigan synth bespoke occaecat vape vinyl vice. Normcore trust fund ea squid drinking vinegar. Voluptate hammock prism offal chambray yr artisan tacos ipsum pitchfork. Pug ad enamel pin kitsch, man bun tattooed raw denim 90s four loko fanny pack keytar ex austin keffiyeh retro.</p>
+					<p>Direct trade meditation hashtag flexitarian williamsburg kitsch. Ad umami vegan pariatur. +1 knausgaard blue bottle tacos chartreuse, subway tile craft beer narwhal chicharrones. Neutra stumptown asymmetrical aute consectetur plaid. Voluptate chartreuse occupy duis, you probably have not heard of them venmo health goth esse beard distillery.</p>
 				</div>
 			</section>
 
@@ -82,7 +82,7 @@ export default function Project(props) {
 
 			<section className="project-area-fullwidth">
 				<div className="project-reachout">
-					<h2 className="h2">Let's get started.</h2>
+					<h2 className="h2">Let&apos;s get started.</h2>
 					<p>Reach out to us today.</p>
 
 					<ContactModal />

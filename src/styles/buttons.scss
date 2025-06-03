@@ -1,4 +1,5 @@
 @use "var";
+@use "sass:map";
 
 /*---------------------------------------------------
 	Buttons and Hyperlinks
@@ -50,8 +51,8 @@ $btnNavColors: (
   &::after {
     background: linear-gradient(
       to bottom,
-      rgba( map_get($btnNavColors, 'gray'), 0.8),
-      rgba( map_get($btnNavColors, 'gray'), 0.8)
+      rgba( map.get($btnNavColors, 'gray'), 0.8),
+      rgba( map.get($btnNavColors, 'gray'), 0.8)
     ) center 1.08rem / 100% 0.24rem no-repeat;
 
     content: "";
@@ -67,9 +68,9 @@ $btnNavColors: (
   &:hover::after {
     background-image: linear-gradient(
       90deg, 
-      rgba( map_get($btnNavColors, 'hotpink'), 0.8) 15%, 
-      rgba( map_get($btnNavColors, 'purple'), 0.6) 35%,  
-      rgba( map_get($btnNavColors, 'hotpink'), 0.8) 85%
+      rgba( map.get($btnNavColors, 'hotpink'), 0.8) 15%, 
+      rgba( map.get($btnNavColors, 'purple'), 0.6) 35%,  
+      rgba( map.get($btnNavColors, 'hotpink'), 0.8) 85%
     );
     animation: underline-gradient 6s linear infinite;
   }
@@ -87,9 +88,9 @@ $btnNavColors: (
 .btn--nav-primary.active::after {
   background-image: linear-gradient(
     90deg, 
-    rgba( map_get($btnNavColors, 'hotpink'), 0.8) 15%, 
-    rgba( map_get($btnNavColors, 'purple'), 0.6) 35%,  
-    rgba( map_get($btnNavColors, 'hotpink'), 0.8) 85%
+    rgba( map.get($btnNavColors, 'hotpink'), 0.8) 15%, 
+    rgba( map.get($btnNavColors, 'purple'), 0.6) 35%,  
+    rgba( map.get($btnNavColors, 'hotpink'), 0.8) 85%
   );
 }
 

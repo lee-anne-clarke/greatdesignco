@@ -6,9 +6,9 @@ import { v4 as uuidv4 } from 'uuid';
 
 
 export default function ExpDesign(props) {
+	const [data] = useState(expDesignData)
+	
 	if (props.visible === true) {
-		const [data] = useState(expDesignData)
-
 		return (
 			<WorkSection title="Experience Design">
 				{data.map(({ imgSrc, imgAlt }) => (

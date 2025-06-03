@@ -66,7 +66,7 @@ export default function About() {
 						<h1 className="h1">About Us</h1>
 					</div>
 					<div className="slide-overlay"></div>
-					<Image src={heroImg} alt="" />
+					<Image src={heroImg} alt="" priority />
 				</div>
 			</Slider>
 
@@ -85,8 +85,8 @@ export default function About() {
 					btnText={btnTextBox1}
 					showMoreHandler={handleToggleShowMore1}
 				>
-					<p>Knausgaard post-ironic gluten-free pariatur pug pop-up in, actually ramps ut tofu trust fund chillwave. Authentic umami hot chicken tacos lyft four dollar toast trust fund asymmetrical cupidatat cliche dolore portland green juice. Chia palo santo consectetur VHS fam. Aliqua chartreuse kickstarter locavore taxidermy man bun. Unicorn meggings neutra palo santo, anim occaecat DIY pinterest cliche cillum hell of. Offal eu you probably haven't heard of them, marfa iceland etsy mlkshk prism aute ullamco tote bag.</p>
-					<p>Franzen fixie laborum, keffiyeh pariatur minim listicle polaroid cred affogato. Duis pickled retro you probably haven't heard of them 90's non air plant offal franzen la croix. Raw denim hashtag in slow-carb next level. Kogi ea dreamcatcher affogato fam, knausgaard fingerstache dolore migas kale chips slow-carb pickled freegan sint.</p>
+					<p>Knausgaard post-ironic gluten-free pariatur pug pop-up in, actually ramps ut tofu trust fund chillwave. Authentic umami hot chicken tacos lyft four dollar toast trust fund asymmetrical cupidatat cliche dolore portland green juice. Chia palo santo consectetur VHS fam. Aliqua chartreuse kickstarter locavore taxidermy man bun. Unicorn meggings neutra palo santo, anim occaecat DIY pinterest cliche cillum hell of. Offal eu you probably have not heard of them, marfa iceland etsy mlkshk prism aute ullamco tote bag.</p>
+					<p>Franzen fixie laborum, keffiyeh pariatur minim listicle polaroid cred affogato. Duis pickled retro you probably have not heard of them 90s non air plant offal franzen la croix. Raw denim hashtag in slow-carb next level. Kogi ea dreamcatcher affogato fam, knausgaard fingerstache dolore migas kale chips slow-carb pickled freegan sint.</p>
 				</AboutBox>
 
 				<AboutBox 
@@ -96,8 +96,8 @@ export default function About() {
 					btnText={btnTextBox2}
 					showMoreHandler={handleToggleShowMore2}
 					>
-					<p>Knausgaard post-ironic gluten-free pariatur pug pop-up in, actually ramps ut tofu trust fund chillwave. Authentic umami hot chicken tacos lyft four dollar toast trust fund asymmetrical cupidatat cliche dolore portland green juice. Chia palo santo consectetur VHS fam. Aliqua chartreuse kickstarter locavore taxidermy man bun. Unicorn meggings neutra palo santo, anim occaecat DIY pinterest cliche cillum hell of. Offal eu you probably haven't heard of them, marfa iceland etsy mlkshk prism aute ullamco tote bag.</p>
-					<p>Franzen fixie laborum, keffiyeh pariatur minim listicle polaroid cred affogato. Duis pickled retro you probably haven't heard of them 90's non air plant offal franzen la croix. Raw denim hashtag in slow-carb next level.</p>
+					<p>Knausgaard post-ironic gluten-free pariatur pug pop-up in, actually ramps ut tofu trust fund chillwave. Authentic umami hot chicken tacos lyft four dollar toast trust fund asymmetrical cupidatat cliche dolore portland green juice. Chia palo santo consectetur VHS fam. Aliqua chartreuse kickstarter locavore taxidermy man bun. Unicorn meggings neutra palo santo, anim occaecat DIY pinterest cliche cillum hell of. Offal eu you probably have not heard of them, marfa iceland etsy mlkshk prism aute ullamco tote bag.</p>
+					<p>Franzen fixie laborum, keffiyeh pariatur minim listicle polaroid cred affogato. Duis pickled retro you probably have not heard of them 90s non air plant offal franzen la croix. Raw denim hashtag in slow-carb next level.</p>
 				</AboutBox>
 
 				<AboutBox 
@@ -107,7 +107,7 @@ export default function About() {
 					btnText={btnTextBox3}
 					showMoreHandler={handleToggleShowMore3}
 					>
-					<p>Knausgaard post-ironic gluten-free pariatur pug pop-up in, actually ramps ut tofu trust fund chillwave. Authentic umami hot chicken tacos lyft four dollar toast trust fund asymmetrical cupidatat cliche dolore portland green juice. Chia palo santo consectetur VHS fam. Aliqua chartreuse kickstarter locavore taxidermy man bun. Unicorn meggings neutra palo santo, anim occaecat DIY pinterest cliche cillum hell of. Offal eu you probably haven't heard of them, marfa iceland etsy mlkshk prism aute ullamco tote bag.</p>
+					<p>Knausgaard post-ironic gluten-free pariatur pug pop-up in, actually ramps ut tofu trust fund chillwave. Authentic umami hot chicken tacos lyft four dollar toast trust fund asymmetrical cupidatat cliche dolore portland green juice. Chia palo santo consectetur VHS fam. Aliqua chartreuse kickstarter locavore taxidermy man bun. Unicorn meggings neutra palo santo, anim occaecat DIY pinterest cliche cillum hell of. Offal eu you probably have not heard of them, marfa iceland etsy mlkshk prism aute ullamco tote bag.</p>
 					
 					<ul>
 						<li>Quis chia polaroid single-origin coffee</li>

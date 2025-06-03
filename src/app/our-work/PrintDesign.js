@@ -6,9 +6,9 @@ import { v4 as uuidv4 } from 'uuid';
 
 
 export default function PrintDesign(props) {
-	if (props.visible === true) {
-		const [data] = useState(printDesignData)
+	const [data] = useState(printDesignData)
 
+	if (props.visible === true) {
 		return (
 			<WorkSection title="Print Design">
 				{printDesignData.map(({ imgSrc, imgAlt }) => (

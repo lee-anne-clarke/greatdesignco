@@ -45,7 +45,7 @@ export default function Header() {
 							className="header-logo" 
 							src={logo} 
 							alt="Great Design Co. logo" 
-							priority={true} />
+							priority />
 					</Link>
 				</div>
 

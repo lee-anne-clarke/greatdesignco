@@ -74,7 +74,7 @@ export default function Work() {
 					</div>
 
 					<div className="slide-overlay"></div>
-					<Image src={heroImg} alt="" />
+					<Image src={heroImg} alt="" priority />
 				</div>
 			</Slider>
 
