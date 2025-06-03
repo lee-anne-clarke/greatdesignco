@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image';
 import Slider from 'react-slick'
+import { sliderSettings } from '../components/carousel/sliderSettings'
 import AboutBox from './AboutBox'
 
 import heroImg from '../../img/about/aboutus-hero.jpg'
@@ -59,7 +60,7 @@ export default function About() {
 
 	return (
 	  	<>
-			<Slider>
+			<Slider {...sliderSettings}>
 				<div>
 					<div className="slide-text">
 						<h1 className="h1">About Us</h1>

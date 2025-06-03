@@ -1,3 +1,5 @@
+@use "../var";
+
 /*---------------------------------------------------
 	Header
 ---------------------------------------------------*/
@@ -15,13 +17,13 @@
 		z-index: 999;
 		background-color: transparent;
 		box-shadow: 0px 4px 5px -4px rgba(0,0,0,0.15);
-		@include transition;
+		@include var.transition;
 	}
 }
 
 .header.active {
 	@media (min-width: 991px) {
-		background-color: $white;
+		background-color: var.$white;
 	}
 }
 

@@ -1,3 +1,5 @@
+@use "../var";
+
 /*---------------------------------------------------
 	Read more (text truncate show/hide)
 ---------------------------------------------------*/
@@ -5,7 +7,7 @@
 @media (max-width: 767px) {
 	.content {
 		padding: 1rem;
-		border: 1px solid $gdcLightGray;
+		border: 1px solid var.$gdcLightGray;
 		margin-bottom: 0.5rem;
 		transition: max-height 0.7s ease;
 
@@ -40,13 +42,13 @@
 }
 
 .hideContent + .btn--toggle {
-	background-color: $gdcPurple;
-	color: $white;
-	border: 1px dashed $gdcPurple;
+	background-color: var.$gdcPurple;
+	color: var.$white;
+	border: 1px dashed var.$gdcPurple;
 }
 
 .showContent + .btn--toggle {
-	background-color: $white;
-	color: $gdcPurple;
-	border: 1px dashed $gdcPurple;
+	background-color: var.$white;
+	color: var.$gdcPurple;
+	border: 1px dashed var.$gdcPurple;
 }

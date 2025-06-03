@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image';
 
 import Slider from 'react-slick'
-import sliderSettings from '../components/carousel/sliderSettings'
+import { sliderSettings } from '../components/carousel/sliderSettings'
 import Scroll from 'react-scroll'
 import { v4 as uuidv4 } from 'uuid';
 
@@ -67,7 +67,7 @@ export default function Work() {
 
   return (
   	<>
-  		<Slider>
+  		<Slider {...sliderSettings}>
 				<div>
 					<div className="slide-text">
 						<h1 className="h1">Our Work</h1>

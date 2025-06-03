@@ -1,9 +1,11 @@
+@use "var";
+
 /*---------------------------------------------------
 	Buttons and Hyperlinks
 ---------------------------------------------------*/
 
 .btn {
-	@include transition;
+	@include var.transition;
 }
 
 button {
@@ -16,7 +18,7 @@ button {
 .btn--nav { 
 	display: inline-block;
   position: relative;
-	color: $black;
+	color: var.$black;
 	font-family: 'Poppins', sans-serif;
 	line-height: 1.2;
 	text-transform: uppercase;
@@ -106,9 +108,9 @@ $btnNavColors: (
 /* Text links */
 
 .btn--text {
-	color: $gdcPurple;
+	color: var.$gdcPurple;
 	text-decoration: none;
-	border-bottom: 1px dashed $gdcGray;
+	border-bottom: 1px dashed var.$gdcGray;
 
 	&:hover {
 		border-bottom: 1px dashed transparent;
@@ -116,12 +118,12 @@ $btnNavColors: (
 }
 
 .btn--text-footer {
-	color: $gdcGray;
+	color: var.$gdcGray;
 }
 
 .btn--text-contactus {
-	color: $white;
-	border-bottom: 1px dashed $white;
+	color: var.$white;
+	border-bottom: 1px dashed var.$white;
 
 	&:hover {
 		border-bottom: 1px dashed transparent;
@@ -140,16 +142,16 @@ $btnNavColors: (
 
 	&, 
 	&:focus {
-		background-color: $white;
-		color: $gdcPurple;
-		border: 1px dashed $white;
+		background-color: var.$white;
+		color: var.$gdcPurple;
+		border: 1px dashed var.$white;
 	}
 	
 
 	&:hover {
-		background-color: $gdcPurple;
-		color: $white;
-		border: 1px dashed $white;
+		background-color: var.$gdcPurple;
+		color: var.$white;
+		border: 1px dashed var.$white;
 	}
 }
 
@@ -169,10 +171,10 @@ $btnNavColors: (
 	width: 1.7rem;
 	height: 1.7rem;
 	margin-right: 0.7rem;
-	fill: $gdcLightGray;
-	@include transition;
+	fill: var.$gdcLightGray;
+	@include var.transition;
 }
 
 a:hover .social-icon {
-	fill: $gdcPurple;
+	fill: var.$gdcPurple;
 }

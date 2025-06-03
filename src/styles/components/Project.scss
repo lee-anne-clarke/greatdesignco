@@ -1,3 +1,5 @@
+@use "../var";
+
 /*---------------------------------------------------
   Projects (used on Homepage and Our Work)
 ---------------------------------------------------*/
@@ -34,14 +36,14 @@
 	padding: 2.4rem;
 	backface-visibility: hidden;
 
-	@include noPointer;
+	@include var.noPointer;
 }
 
 
 /* Project boxes - hover effects (desktop) */
 
 .projectbox {
-	background-color: $gdcPurple;
+	background-color: var.$gdcPurple;
 }
 
 .projectbox__caption::before {
@@ -138,7 +140,7 @@
 	width: 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
-	color: $white;
+	color: var.$white;
 	margin: 2rem 0
 }
 
@@ -188,6 +190,6 @@
 
 	// Contact Us button
 	.btn--nav {
-		color: $white;
+		color: var.$white;
 	}
 }

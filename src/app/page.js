@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 import Slider from 'react-slick'
-import sliderSettings from './components/carousel/sliderSettings'
+import { sliderSettingsHome } from './components/carousel/sliderSettings'
 import { v4 as uuidv4 } from 'uuid';
 
 import ProjectBox from './our-work/project/ProjectBox'
@@ -43,7 +43,7 @@ export default function Homepage() {
 
   return (
     <main>
-      <Slider {...sliderSettings}>
+      <Slider {...sliderSettingsHome}>
         <div className="u-relative">
           <div className="slide-text">
             <h1 className="h1 h1--home">Unexpected, Experienced, Utterly Magnificent</h1>
@@ -93,7 +93,7 @@ export default function Homepage() {
         </section>
       </div> {/* END OF .container */}
 
-      </main>
-    );
+    </main>
+  );
 
 }

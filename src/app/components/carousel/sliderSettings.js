@@ -1,4 +1,4 @@
-const sliderSettings = {
+const sliderSettingsHome = {
     arrows: false,
     autoplay: true,
     autoplaySpeed: 4500,
@@ -10,4 +10,13 @@ const sliderSettings = {
     speed: 500
 }
 
-export default sliderSettings 
+const sliderSettings = {
+    arrows: false,
+    centerMode: true,
+    centerPadding: 0,
+    dots: false,
+    speed: 0
+}
+
+
+export { sliderSettingsHome, sliderSettings }

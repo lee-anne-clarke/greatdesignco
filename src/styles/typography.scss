@@ -1,3 +1,5 @@
+@use "var";
+
 /*---------------------------------------------------
 	Typography
 ---------------------------------------------------*/
@@ -48,7 +50,7 @@ html {
 .h3-blogpost,
 .blogpost__summary,
 .blogpost__date {
-	color: $white;
+	color: var.$white;
 	font-weight: 300;
 	text-transform: uppercase;
 }
@@ -81,7 +83,7 @@ li {
 
 .hr {
   border: none;
-  border-bottom: 1px solid $gdcLightGray;
+  border-bottom: 1px solid var.$gdcLightGray;
   margin: 2rem 0;
 
   @media (min-width: 991px) {
@@ -105,7 +107,7 @@ li {
 /* Footer */
 
 .footer p {
-	color: $gdcGray;
+	color: var.$gdcGray;
 }
 
 

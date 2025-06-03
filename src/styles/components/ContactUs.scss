@@ -1,3 +1,5 @@
+@use "../var";
+
 /*---------------------------------------------------
   Contact Us portal
 ---------------------------------------------------*/
@@ -14,7 +16,7 @@
 	align-items: center;
 	justify-content: center;
 	
-	background-color: $gdcPurple;
+	background-color: var.$gdcPurple;
 	overflow-y: hidden;
 	animation: modalFadeIn 0.3s ease-out 85ms forwards;
 
