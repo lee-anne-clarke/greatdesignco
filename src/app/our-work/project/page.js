@@ -3,6 +3,7 @@
 import React, { useEffect } from 'react'
 import Image from 'next/image';
 import Slider from 'react-slick'
+import { sliderSettings } from '../../components/carousel/sliderSettings'
 import ContactModal from '../../components/ContactModal'
 
 import heroImg from '../../../img/work/project/project-hero.jpg'
@@ -19,7 +20,7 @@ export default function Project(props) {
 
 	return (
 	  	<>
-	  		<Slider>
+	  		<Slider {...sliderSettings}>
 	  			<div>
 					<div className="slide-text">
 						<h1 className="h1">Quis dolor</h1>

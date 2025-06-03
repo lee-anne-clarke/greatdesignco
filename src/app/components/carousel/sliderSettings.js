@@ -6,8 +6,7 @@ const sliderSettingsHome = {
     centerPadding: 0,
     dots: true,
     fade: true,
-    pauseOnHover: false,
-    speed: 500
+    pauseOnHover: false
 }
 
 const sliderSettings = {
@@ -15,7 +14,7 @@ const sliderSettings = {
     centerMode: true,
     centerPadding: 0,
     dots: false,
-    speed: 0
+    fade: true
 }
 
 
