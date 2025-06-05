@@ -24,9 +24,12 @@ let Element    = Scroll.Element
 
 
 export default function Work() {
-
 	useEffect(() =>  {
-		// react-scroll
+		window.scrollTo(0, 0);
+	}, []);
+
+	// react-scroll
+	useEffect(() =>  {
 		scrollSpy.update();
 
 		return () => {

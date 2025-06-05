@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import Image from 'next/image';
 import Slider from 'react-slick'
 import { sliderSettings } from '../../components/carousel/sliderSettings'
@@ -14,6 +14,11 @@ import project4 from '../../../img/work/project/project4.jpg'
 
 
 export default function Project(props) {
+	useEffect(() =>  {
+		window.scrollTo(0, 0);
+	}, []);
+
+
 	return (
 	  	<>
 	  		<title>Project | Great Design Co.</title>
@@ -71,11 +76,16 @@ export default function Project(props) {
 				</div>
 			</section>
 
-			<div className="project-area">
+			<section className="project-area project-area--flex">
 				<div className="project-area__imgwrap">
 					<Image className="u-mw100" src={project4} alt="" />
 				</div>
-			</div>
+				
+				<div className="project-area__txt">
+					<h2 className="h2">Consectetur adipiscing </h2>
+					<p>Quisque auctor eros dui, quis posuere augue condimentum et. Pellentesque et mi a tortor scelerisque laoreet. Aliquam quis dignissim lectus, quis cursus neque. Curabitur non dolor non nisi eleifend tristique. Vivamus ut nunc nulla. Curabitur viverra mauris quis magna placerat, sit amet volutpat augue interdum. Nunc sed eros mollis, pulvinar mauris vel, egestas mauris. Donec enim nisl, vestibulum et dignissim quis, dictum eu elit.</p>
+				</div>
+			</section>
 
 			<section className="project-area-fullwidth">
 				<div className="project-reachout">

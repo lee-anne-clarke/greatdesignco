@@ -17,8 +17,9 @@
 
 .projectbox {
 	position: relative;
-	overflow: hidden;
+	max-height: 300px;
 	margin: 0 0 2rem;
+	overflow: hidden;
 
 	@media (min-width: 768px) {
 		width: 50%;
@@ -47,14 +48,12 @@
 }
 
 .projectbox__caption::before {
+	content: '';
 	position: absolute;
 	top: -1.9rem;
 	left: -2.6rem;
 	width: 100%;
 	height: 100%;
-	background: url(../../img/triangle.svg) no-repeat center center;
-	background-size: 200% 100%;
-	content: '';
 	transform: scale3d(5,2.5,1);
 	transform-origin: 50% 50%;
 	transition: 
@@ -72,18 +71,20 @@
 	transform: translate3d(0,40px,0);
 }
 
-@media (min-width: 768px) {
-	.projectbox:hover .projectbox__img,
-	.projectbox:hover .projectbox__caption::before {
-		opacity: 0.6;
-	}
+.projectbox:hover {
+	@media (min-width: 768px) {
+		.projectbox__img,
+		.projectbox__caption::before {
+			opacity: 0.2;
+		}
 
-	.projectbox:hover .projectbox__caption::before {
-		transform: scale3d(1,1,1);
-	}
+		.projectbox__caption::before {
+			transform: scale3d(1,1,1);
+		}
 
-	.projectbox:hover .h3-projectbox {
-		transform: translate3d(0,0,0);
+		.h3-projectbox {
+			transform: translate3d(0,0,0);
+		}
 	}
 }
 
@@ -123,12 +124,10 @@
 
 	@media (min-width: 991px) {
 		.project-area__imgwrap {
-			//width: 60%;
 			flex: 1.6;
 		}
 
 		.project-area__txt {
-			//width: 37%;
 			flex: 1;
 			padding-left: 2rem;
 		}

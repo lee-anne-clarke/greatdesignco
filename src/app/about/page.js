@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Image from 'next/image';
 import Slider from 'react-slick'
 import { sliderSettings } from '../components/carousel/sliderSettings'
@@ -13,6 +13,10 @@ import aboutUsImg3 from '../../img/about/aboutus3.jpg'
 
 
 export default function About() {
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
 	const [showMoreBox1, setShowMoreBox1] = useState(false);
 	const [btnTextBox1, setBtnTextBox1] = useState('Show more');
 
@@ -52,7 +56,6 @@ export default function About() {
 			setBtnTextBox3('Show more');
 		}
 	}
-
 
 
 	return (
