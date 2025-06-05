@@ -26,9 +26,7 @@ let Element    = Scroll.Element
 export default function Work() {
 
 	useEffect(() =>  {
-		document.title = "Our Work | Great Design Co."
-
-		//react-scroll
+		// react-scroll
 		scrollSpy.update();
 
 		return () => {
@@ -67,6 +65,7 @@ export default function Work() {
 
   return (
   	<>
+  		<title>Our Work | Great Design Co.</title>
   		<Slider {...sliderSettings}>
 				<div>
 					<div className="slide-text">

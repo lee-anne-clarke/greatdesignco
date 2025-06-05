@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image';
 import Slider from 'react-slick'
 import { sliderSettings } from '../components/carousel/sliderSettings'
@@ -53,13 +53,11 @@ export default function About() {
 		}
 	}
 
-	useEffect(() => {
-		document.title = "About Us | Great Design Co."
-	}, []);
 
 
 	return (
 	  	<>
+	  		<title>About Us | Great Design Co.</title>
 			<Slider {...sliderSettings}>
 				<div>
 					<div className="slide-text">
