@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useEffect } from 'react'
+import React from 'react'
 import Image from 'next/image';
 import Slider from 'react-slick'
 import { sliderSettings } from '../../components/carousel/sliderSettings'
@@ -14,12 +14,9 @@ import project4 from '../../../img/work/project/project4.jpg'
 
 
 export default function Project(props) {
-	useEffect(() =>  {
-		document.title = "Project | Great Design Co."
-	});
-
 	return (
 	  	<>
+	  		<title>Project | Great Design Co.</title>
 	  		<Slider {...sliderSettings}>
 	  			<div>
 					<div className="slide-text">
