@@ -29,6 +29,10 @@
 
 .header__inner {
 	padding: 1rem;
+
+	@media (max-width: 600px) {
+		text-align: center;
+	}
 	
 	@media (min-width: 991px) {
 		display: flex;

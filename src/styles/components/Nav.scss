@@ -23,6 +23,10 @@
 		padding-top: 0.9rem;
 	}
 
+	@media (max-width: 600px) {
+		text-align: center;
+	}
+
 	@media (min-width: 991px) {
 		display: inline-block;
 		line-height: 1;

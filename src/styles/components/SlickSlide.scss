@@ -13,9 +13,9 @@
 .slide-text {
 	display: none;
 
-	@media (min-width: 450px) {
+	@media (min-width: 600px) {
 		position: absolute;
-		bottom: 0.5rem;
+		top: 12rem;
 		z-index: 2;
 		display: flex;
 		flex-direction: column;
@@ -23,13 +23,9 @@
 		justify-content: center;
 		width: 100%;
 	}
-	@media (min-width: 600px) {
-		top: 14rem;
-		bottom: auto;
-	}
 
 	@media (min-width: 991px) {
-		top: 32%;
+		top: 10rem;
 	}
 }
 
@@ -37,7 +33,11 @@
 // Slick - custom styles
 
 .slick-list {
-	max-height: 100vh;
+	max-height: 12rem;
+
+	@media (min-width: 600px) {
+		max-height: 20rem;
+	}
 }
 
 .slick-track {

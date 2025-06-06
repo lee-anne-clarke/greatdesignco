@@ -15,10 +15,10 @@ export default function Header() {
 
 	const handleHeaderEffect = () => {
 		if (window.scrollY > 50) {
-		    setHeaderActive(true)
-		  } else {
-		    setHeaderActive(false)
-		  }
+			setHeaderActive(true)
+		} else {
+			setHeaderActive(false)
+		}
 	}
 
 	useEffect(() => {
